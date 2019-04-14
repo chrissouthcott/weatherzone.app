@@ -90,14 +90,14 @@ h2{
     margin-top: 300px;
     margin-left: -551px;
     left:50%;
-    top: 110px;
+    bottom: 55px;
 }
 
 .cover.hero{
 	background: #4BA1D4;
 	background-image: radial-gradient(85% 132%, rgba(255,255,255,0.25) 49%, rgba(255,255,255,0.00) 100%);
 	width:100vw;
-	height:800px;
+    height:100vh;
 }
 
 .cover.more{
@@ -193,11 +193,11 @@ width: 1100px;
     margin-left: 175px;
     left: 50%;
     z-index: 500;
-    top: -180px;
+    bottom: 133px;
 }
 
-.screenshot{
-	position: absolute;
+.screenshot.hero{
+    position: absolute;
     background-image: url(screenshot.png);
     width: 418px;
     height: 744px;
@@ -205,7 +205,7 @@ width: 1100px;
     background-repeat: no-repeat;
     left: 50%;
     margin-left: 212px;
-    top: -149px;
+    bottom: 171px;
 }
 
 .guide{
@@ -248,7 +248,6 @@ width: 1100px;
 	}
 
 	.cover.hero{
-		height:750px;
 	}
 
 	.content.hero{
@@ -298,10 +297,18 @@ width: 1100px;
 		width:300px;
 	}
 
+    .cover.hero{
+        height:100vh;
+        max-height: initial;
+    }
+
 	.content.hero{
-		width: 100%;
-	    margin-left: -50%;
-	    text-align: center;
+        width: 80%;
+        margin-left: -50%;
+        text-align: center;
+        bottom: 30px;
+        top: initial;
+        padding-left: 10%;
 	}
 
 	.header{
@@ -309,15 +316,17 @@ width: 1100px;
 	}
 
 	.phone.hero{
-		width: 300px;
-    	margin-left: -150px;
-    	margin-top:0;
-    }
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -263px;
+    bottom: 117px;
+}
 
     .screenshot.hero{
-	    left: 50%;
-	    width: 250px;
-	    margin-left: -123px;
-	    margin-top:-16px;
+left: 50%;
+    width: 250px;
+    margin-left: -123px;
+    margin-top: -16px;
+    bottom: 170px;
     }
-}
+}   
