@@ -1,2 +1,2 @@
 # weatherzone.app
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![weatherzonedotapp](https://raw.githubusercontent.com/chrissouthcott/wz-dotapp/master/assets/github.png)
