@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weatherzone for iPhone, Android and iPad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Australia's favourite weather app, Weatherzone, gives you access to detailed observations, 7 Day forecasts, rain radar, BOM warnings and much more.">
+<link href="https://resources.weatherzone.com.au/wz5/images/icon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="include/animate.css">
+<link rel="stylesheet" href="include/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+    var s = $("#headerID");
+    var pos = s.position();                    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= pos.top & windowpos >=200) {
+            s.addClass("headershow");
+        } else {
+            s.removeClass("headershow"); 
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+<div class="header" id="headerID">
+<div class="logo"></div>
+<div class="download">
+<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="include/googleplay.svg"/></a>
+<div class="spacer"></div>
+<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="include/appstore.svg"/></a>
+</div>
+</div>
+
+<div class="cover hero">
+	<div class="content hero">
+		<img class="herologo" src="include/wzwhite.svg"/>
+		<h1>Australia's favourite weather app</h1>
+		<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="include/googleplay_white.svg"/></a>
+		<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="include/appstore_white.svg"/></a>
+	</div>
+	<div class="phone hero"></div>
+	<div class="screenshot hero"></div>
+</div>
+<div class="cover info">
+	<div class="content info">
+	<h2>Featuring the latest real-time observations from the Bureau of Meteorology, hourly and daily forecasts, rain radar and more features than any other Australian weather app.</h2>
+	<div id="screenshot1" class="screenshotblock"></div><div id="screenshot2" class="screenshotblock"></div><div id="screenshot3" class="screenshotblock"></div><div id="screenshot4" class="screenshotblock"></div>
+	</div>
+</div>
+
+<div class="cover contact">
+	<div class="content contact">
+		<div class="contactblock" id="contactblock1">
+			<a href="http://apps.weatherzone.com.au/"><h2>More Information</h2></a>
+		</div>
+		<div class="contactblock" id="contactblock2">
+			<a href="http://help.weatherzone.com.au/support/home"><h2>Help and Feedback</h2></a>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
