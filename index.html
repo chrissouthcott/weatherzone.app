@@ -1,65 +1,64 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Weatherzone - Local</title>
+<title>Weatherzone for iPhone, Android and iPad</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The HTML5 Herald">
+<meta name="description" content="Australia's favourite weather app, Weatherzone, gives you access to detailed observations, 7 Day forecasts, rain radar, BOM warnings and much more.">
 <link href="https://resources.weatherzone.com.au/wz5/images/icon.ico" rel="shortcut icon" />
-<script src="include/script.js"></script>
-<link rel="stylesheet" href="include/animate.css">
-<link rel="stylesheet" href="include/style.css">
+<link rel="stylesheet" href="assets/animate.css">
+<link rel="stylesheet" href="assets/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<script>
+	$(document).ready(function() {
+    var s = $("#headerID");
+    var pos = s.position();                    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= pos.top & windowpos >=200) {
+            s.addClass("headershow");
+        } else {
+            s.removeClass("headershow"); 
+        }
+    });
+});
+</script>
 </head>
 
 <body>
-<div class="guide"></div>
-<div class="header">
+<div class="header" id="headerID">
 <div class="logo"></div>
 <div class="download">
-<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="include/googleplay.svg"/></a>
+<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="assets/googleplay.svg"/></a>
 <div class="spacer"></div>
-<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="include/appstore.svg"/></a>
+<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="assets/appstore.svg"/></a>
 </div>
 </div>
 
 <div class="cover hero">
 	<div class="content hero">
-		<img class="herologo" src="include/wzwhite.svg"/>
+		<img class="herologo" src="assets/wzwhite.svg"/>
 		<h1>Australia's favourite weather app</h1>
-		<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="include/googleplay_white.svg"/></a>
-		<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="include/appstore_white.svg"/></a>
-		<!--<h2>Featuring the latest real-time observations from the Bureau of Meteorology, hourly and daily forecasts, rain radar and more features than any other Australian weather app.</h2>-->
+		<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="assets/googleplay_white.svg"/></a>
+		<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="assets/appstore_white.svg"/></a>
 	</div>
 	<div class="phone hero"></div>
 	<div class="screenshot hero"></div>
 </div>
-
-<!--<div class="cover photos">
-	<div class="content photos">
-		<img src="sunny.svg"/><img src="night.svg"/><img src="thunder.svg"/><img src="snow.svg"/>
+<div class="cover info">
+	<div class="content info">
+	<h2>Featuring the latest real-time observations from the Bureau of Meteorology, hourly and daily forecasts, rain radar and more features than any other Australian weather app.</h2>
+	<div id="screenshot1" class="screenshotblock"></div><div id="screenshot2" class="screenshotblock"></div><div id="screenshot3" class="screenshotblock"></div><div id="screenshot4" class="screenshotblock"></div>
 	</div>
-	<div class="photo1"></div>
-	<div class="photo2"></div>
-</div>-->
+</div>
 
-<div class="cover more" id="conditionsbg">
-	<div class="content more">
-		<div class="conditions"><img id="condition1" onmouseover="sunny()" onmouseout="defaults()" src="include/sunny.svg"/><img id="condition2" onmouseover="storm()" onmouseout="defaults()" src="include/thunder.svg"/><img id="condition3" onmouseover="snow()" onmouseout="defaults()" src="include/snow.svg"/></div>
-
-		<div id="photoblockconditions">
-		<div class="photoblock" id="photo1"></div>
-		<div class="photoblock" id="photo2"></div>
-		<div class="photoblock" id="photo3"></div>
-		<div class="photoblock" id="photo4"></div>
+<div class="cover contact">
+	<div class="content contact">
+		<div class="contactblock" id="contactblock1">
+			<a href="http://apps.weatherzone.com.au/"><h2>More Information</h2></a>
 		</div>
-
-		<div class="photoblock" style="background-image:url('include/default01.jpg')"></div>
-		<div class="photoblock" style="background-image:url('include/default02.jpg')"></div>
-		<div class="photoblock" id="block1" style="background:none;"><h2>A photo for every condition</h2></div>
-		<div class="photoblock" style="background-image:url('include/default03.jpg')"></div>
-		<div class="photoblock" style="background-image:url('include/default04.jpg')"></div>
-		<a href="http://apps.weatherzone.com.au/submit-weather-photography/"><div class="photoblock" id="block2" style="background:#FFF;"><h2>submit yours</h2></div></a>
+		<div class="contactblock" id="contactblock2">
+			<a href="http://help.weatherzone.com.au/support/home"><h2>Help and Feedback</h2></a>
+		</div>
 	</div>
 </div>
 
