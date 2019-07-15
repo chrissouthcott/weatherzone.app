@@ -42,7 +42,6 @@ html,body{
     }
 
 
-
 #photoblockconditions{
     opacity:1;
     transition:0.3s;
@@ -615,4 +614,16 @@ bottom: -65px;
     h1{
         font-size:35px;
     }
+
+}
+
+@media screen and (max-width: 850px){
+    .block .content{
+        width: 90%;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        left: 5%;
+        margin-left:initial;
+    }   
 }
