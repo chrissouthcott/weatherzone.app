@@ -1,15 +1,47 @@
-/* Parent Styles */	
-@font-face {
-	font-family: Proxima Nova Bold;
-	src: url(proxima-nova-bold.otf);
-}
-
 html,body{
 	margin:0;
 	padding:0;
     overflow-x:hidden;
     background: linear-gradient(#4BA1D4, #4BA1D4, #FFF);
 }
+
+.block{
+
+}
+
+.block.location{
+    height:600px;
+    background:#FFF;
+    background-image:url('map.jpg');
+    background-size:cover;
+    position:relative;
+}
+
+    .block p{
+        font-family: proxima-nova;
+        font-weight: 500;
+        color: #000;
+        font-size: 25px;
+    }
+
+    .block h1{
+        font-family: proxima-nova;
+        font-weight: 700;
+        color: #000;
+        font-size: 55px;
+        width:auto;
+    }
+
+    .block .content{
+        width: 800px;
+        text-align: center;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -400px;
+    }
+
+
 
 #photoblockconditions{
     opacity:1;
@@ -61,20 +93,23 @@ html,body{
 }
 
 p{
-    font-family: Proxima Nova Bold;
+    font-family: proxima-nova;
+    font-weight:bold;
     color: #FFF;
     font-size:25px;  
 }
 
 h1{
-	font-family: Proxima Nova Bold;
+    font-family: proxima-nova;
+    font-weight:bold;
     color: #D4EFFF;
     width: 410px;
 	font-size:45px;
 }
 
 h2{
-	font-family: Proxima Nova Bold;
+    font-family: proxima-nova;
+    font-weight:bold;
     color: #D4EFFF;
     width: 1000px;
 	font-size:65px;
