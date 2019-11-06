@@ -1,0 +1,7 @@
+[data-aos="example-anim1"] {
+  transform: rotate(5deg);
+  transition-property: transform;
+  &.aos-animate {
+    transform: rotate(200deg);
+  }
+}

@@ -1,17 +1,39 @@
 <html lang="en">
 <head>
-	
+	<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <meta charset="utf-8">
 <title>Weatherzone for iPhone, Android and iPad</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Australia's favourite weather app, Weatherzone, gives you access to detailed observations, 7 Day forecasts, rain radar, BOM warnings and much more.">
-<link href="https://resources.weatherzone.com.au/wz5/images/icon.ico" rel="shortcut icon" />
+<link href="assets/icons/favicon.ico" rel="shortcut icon" />
+<link rel="icon" type="image/png" href="assets/icons/favicon-16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="assets/icons/favicon-96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="assets/icons/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/icons/favicon-180.png" sizes="180x180">
 <link rel="stylesheet" href="assets/animate.css">
 <link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="https://use.typekit.net/ehy1ncf.css">
+<link rel="stylesheet" href="assets/alt.css">
+<script src="assets/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+	/*
+	$(document).ready(function() {
+    var s = $("#headerID");
+    var pos = s.position();                    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= pos.top & windowpos >=700) {
+            s.addClass("headershow");
+        } else {
+            s.removeClass("headershow"); 
+        }
+    });
+});
+*/
 	$(document).ready(function() {
     var s = $("#headerID");
     var pos = s.position();                    
@@ -40,50 +62,152 @@
 </div>
 </div>
 
-<div class="cover hero">
-	<div class="content hero">
+<div class="block block-hero">
+	<div class="content">
 		<img class="herologo" src="assets/wzwhite.svg"/>
-		<h1>Australia's favourite weather app</h1>
+		<h2>Australia's favourite weather app</h2>
 		<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="assets/googleplay_white.svg"/></a>
 		<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="assets/appstore_white.svg"/></a>
 	</div>
-	<div class="phone hero"></div>
-	<div class="screenshot hero"></div>
-</div>
-<div class="cover info">
-	<div class="content info">
-	<h2>Featuring the latest real-time observations from the Bureau of Meteorology, hourly and daily forecasts, rain radar and more features than any other Australian weather app.</h2>
-	</div>
+	<div class="phone"></div>
+	<div class="screenshot"></div>
 </div>
 
-<div class="block block-location">
-	<div data-aos-duration="1000" data-aos-delay="100" data-aos="fade-down" class="location-notification">
-		<img src="assets/notification.png" width="100%"/>
-	</div>
+<div class="block block-local">
 	<div data-aos="zoom-in" class="location-pulse location-pulse-1"></div>
-	<div data-aos="zoom-in" data-aos-delay="500" class="location-pulse location-pulse-2"></div>
-	<div data-aos="zoom-in" data-aos-delay="250" class="location-pulse location-pulse-3"></div>
-	<div class="content content-location">
-		<img src="assets/location.png" width="60px"/>
-		<h1>Real-time alerts for your location</h1>
-		<p>With real time Bureau of Meteorology warnings, Australia’s only lightning detection network, and severe weather alerts</p>
-	</div>
-</div>
-
-<div class="block block-photos">
+	<div data-aos="zoom-in" class="location-pulse location-pulse-2"></div>
+	<div data-aos="zoom-in" class="location-pulse location-pulse-3"></div>
+	<div data-aos="zoom-in" class="location-pulse location-pulse-4"></div>
+	<div data-aos="zoom-in" class="location-pulse location-pulse-5"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-6"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-7"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-8"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-9"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-10"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-11"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-12"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-13"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-14"></div>
+	<div data-aos="zoom-in" data-aos-delay="1000" class="location-pulse location-pulse-15"></div>
 	<div class="content">
-		<img src="assets/photos.png" width="300px"/>
-		<div class="phone"></div>
-		<div class="photo-top"></div>
+		<img src="assets/location.png" width="60px"/>
+		<h1>More forecast points means better accuracy</h1>
+		<p>A next-generation gridded forecast system makes sure your suburb is on the map.</p>
+	</div>
+	<div class="phone" data-aos="fade-down" data-aos-duration="2000"></div>
+	<div class="phone-shadow" data-aos="fade" data-aos-delay="500" data-aos-duration="2000"></div>
+</div>
+
+<div class="block block-photos" id="photosbackground">
+	<div class="bg" id="bg3"></div>
+	<div class="bg" id="bg2"></div>
+	<div class="bg" id="bg1"></div>
+
+	<div class="content">
+		<div class="conditions">
+			<div class="condition one" id="c1" onclick="photoOne()"></div><div class="condition two" id="c2" onclick="photoTwo()"></div><div class="condition three" id="c3" onclick="photoThree()"></div>
+		</div>
 		<h1>An Australian photo for every condition</h1>
-		<p>Gorgeous weather photography submitted by you, designed to match the weather</p>
+		<p>See gorgeous weather photography submitted by you, curated to match the weather.</p>
+		<a class="send" href="http://apps.weatherzone.com.au/submit-weather-photography/">Send us your photo</a>
+	</div>
+	<div class="phone"></div>
+	<div class="screenshot screenshot3" id="screenshot3"></div>
+	<div class="screenshot screenshot2" id="screenshot2"></div>
+	<div class="screenshot screenshot1" id="screenshot1"></div>
+</div>
+
+
+<div class="block block-48">
+		<video width="350" autoplay loop muted playsinline>
+				<source src="assets/48-video_compressed.mp4" type="video/mp4">
+			  </video>
+		<div class="content">
+			<img src="assets/48.png" width="60px">
+			<h1>Interactive hourly forecasts</h1>
+			<p>See how temperature, rain and wind conditions change over the next 48 hours.</p>
+		</div>
+</div>
+
+
+<div class="block block-radar">
+		<video width="1920" autoplay loop muted playsinline>
+				<source src="assets/radar-bg-loop_compressed.mp4" type="video/mp4">
+			  </video>
+		<div class="gradient"></div>
+		<div class="content">
+			<img src="assets/radar.png" width="60px">
+			<h1>An immersive mapping experience</h1>
+			<p>Visualise the weather with satellite imagery, rain radar and lightning.</p>
+		</div>
+</div>
+
+<div class="block block-news">
+	<div class="cutout"></div>
+	<div class="screen"></div>
+	<video data-aos="fade" width="248" autoplay loop muted playsinline>
+		<source src="assets/wpulse.mp4" type="video/mp4">
+	  </video>
+	<div class="content">
+		<img src="assets/video.png" width="60px">
+		<h1>Daily news and videos</h1>
+		<p>Stay up to date with what's happening in weather around Australia as presented by Weatherzone's meteorologists.</p>
 	</div>
 </div>
 
-<div class="block block-pulse"></div>
+<div class="block block-extras">
+	<div class="content">
+		<h1>Plus all the essentials you'd expect from Australia's favourite weather app</h1>
+		<div class="features">
+		<div class="feature">
+			<div class="icon icon1"></div>
+			<h3>BOM<br>Warnings</h3>
+		</div>
 
-<div class="blankspace"></div>
+		<div class="feature">
+			<div class="icon icon2"></div>
+			<h3>Sunrise And<br>Sunset Times</h3>
+		</div>
 
+		<div class="feature">
+			<div class="icon icon3"></div>
+			<h3>UV<br>Ratings</h3>
+		</div>
+
+		<div class="feature">
+			<div class="icon icon4"></div>
+			<h3>Fire Danger<br>Ratings</h3>
+		</div>
+		<div class="feature">
+			<div class="icon icon5"></div>
+			<h3>Long-range<br>Rainfall Forecasts</h3>
+		</div>
+
+		<div class="feature">
+			<div class="icon icon6"></div>
+			<h3>Marine<br>Forecasts</h3>
+		</div>
+
+		<div class="feature">
+			<div class="icon icon7"></div>
+			<h3>Snow Cams And<br>Forecasts</h3>
+		</div>
+
+		<div class="feature">
+			<div class="icon icon8"></div>
+			<h3>Extreme And<br>Records</h3>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="block block-footer">
+	<div class="content">
+	<p style="color:#FFF;"><a href="https://twitter.com/weatherzone"><img width="30px" style="margin-right:10px" src="assets/twitter.png"/></a><a href="https://facebook.com/weatherzone"><img width="30px" style="margin-right:10px" src="assets/facebook.png"/></a><a href="https://instagram.com/weatherzone"><img width="30px" src="assets/instagram.png"/></p></a>
+	<p>Copyright © Weatherzone 2019</p>
+	<p><u>Privacy Policy</u><u>Conditions of Use</u><u>Help & Support</u></p>
+	</div>
+</div>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

@@ -1,0 +1,64 @@
+html,body{
+    background: #09222f;
+}
+
+.block{
+    background-image: linear-gradient(#4ba1d4, #4491bf);
+}
+
+.block-hero{
+    z-index:1000;
+}
+
+.block-local{
+    background-image: url(map.png), linear-gradient(#4491bf, #3c81aa);
+}
+
+.block-photos{
+    background-image: linear-gradient(#3c81aa,#357194);
+    background-size: contain, contain;
+    background-position: right, center;
+    background-repeat: no-repeat;
+}
+
+.block-48{
+    background: linear-gradient(#357194, #2d617f);
+}
+
+.block-news{
+    background: linear-gradient(#2d617f 0%, #26516a 100%);
+}
+
+.block-extras{
+    background: linear-gradient(#26516a 0%, #1e4055 100%);
+}
+
+.block-extras h1{
+    color:#FFF;
+}
+
+.block-extras h3{
+    color:#FFF;
+}
+
+.block-footer{
+    background: #0b222f;
+}
+
+.block-footer p{
+    color:#FFF;
+    font-weight:900;    
+}
+
+.block-footer u{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2d617f, #2d617f00, #2d617f);
+    z-index: 500;
+    position: absolute;
+}

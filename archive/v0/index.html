@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<meta charset="utf-8">
+<title>Weatherzone for iPhone, Android and iPad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Australia's favourite weather app, Weatherzone, gives you access to detailed observations, 7 Day forecasts, rain radar, BOM warnings and much more.">
+<link href="https://resources.weatherzone.com.au/wz5/images/icon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/fonts.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+    var s = $("#headerID");
+    var pos = s.position();                    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= pos.top & windowpos >=200) {
+            s.addClass("headershow");
+        } else {
+            s.removeClass("headershow"); 
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div class="guides"></div>
+
+<div class="header" id="headerID">
+<div class="logo"></div>
+<div class="download">
+<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="assets/googleplay.svg"/></a>
+<div class="spacer"></div>
+<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="assets/appstore.svg"/></a>
+</div>
+</div>
+
+<div class="cover hero">
+	<div class="content hero">
+		<img class="herologo" src="assets/wzwhite.svg"/>
+		<h1>Australia's favourite weather app</h1>
+		<a href="https://play.google.com/store/apps/details?id=au.com.weatherzone.android.weatherzonefreeapp&hl=en_AU" target="_blank"><img src="assets/googleplay_white.svg"/></a>
+		<a href="https://itunes.apple.com/au/app/weatherzone/id409060691?mt=8"><img src="assets/appstore_white.svg"/></a>
+	</div>
+	<div class="phone hero"></div>
+	<div class="screenshot hero"></div>
+</div>
+<div class="cover info">
+	<div class="content info">
+	<h2>Featuring the latest real-time observations from the Bureau of Meteorology, hourly and daily forecasts, rain radar and more features than any other Australian weather app.</h2>
+	</div>
+</div>
+
+<div class="block block-location">
+	<div data-aos-duration="1000" data-aos-delay="100" data-aos="fade-down" class="location-notification">
+		<img src="assets/notification.png" width="100%"/>
+	</div>
+	<div data-aos="zoom-in" class="location-pulse location-pulse-1"></div>
+	<div data-aos="zoom-in" data-aos-delay="500" class="location-pulse location-pulse-2"></div>
+	<div data-aos="zoom-in" data-aos-delay="250" class="location-pulse location-pulse-3"></div>
+	<div class="content content-location">
+		<img src="assets/location.png" width="60px"/>
+		<h1>Real-time alerts for your location</h1>
+		<p>With real time Bureau of Meteorology warnings, Australia’s only lightning detection network, and severe weather alerts</p>
+	</div>
+</div>
+
+<div class="block block-photos">
+	<div class="content">
+		<img src="img/photos.png" width="300px"/>
+		<div data-aos="fade">
+			<div class="phone"></div>
+			<div class="photo-top"></div>
+		</div>
+		<h1>An Australian photo for every condition</h1>
+		<p>Gorgeous weather photography submitted by you, designed to match the weather</p>
+	</div>
+</div>
+
+<div class="block block-pulse"></div>
+
+<div class="blankspace"></div>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+    /*Old Stuff*/
+
+    .cover p{
+        font-family: proxima-nova;
+        font-weight:bold;
+        color: #FFF;
+        font-size:25px;  
+    }
+
+    .cover h1{
+        font-family: proxima-nova;
+        font-weight:bold;
+        color: #D4EFFF;
+        width: 410px;
+    	font-size:45px;
+    }
+
+    .cover h2{
+        font-family: proxima-nova;
+        font-weight:bold;
+        color: #D4EFFF;
+        width: 1000px;
+    	font-size:65px;
+    }
+
+    .content.hero h2{
+
+    	margin-top: 130px;
+        position: absolute;
+    }
+
+
+    /* Hero */
+
+    .content.hero{
+    	width: 548px;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: -551px;
+        left:50%;
+        bottom: 55px;
+    }
+
+    .content.hero{
+        width: 1100px;
+    }
+
+    .content.info{
+        left: 50%;
+        top: 50%;
+        margin-left: -550px;
+        position: relative;
+        width: 1100px;
+        padding-bottom: 20px;
+    }
+
+    .cover.hero{
+    width: 100vw;
+    height: 100vh;
+    }
+
+    .phone.hero{
+        position: absolute;
+        background-image: url(global-phone-shadow.png);
+        width: 900px;
+        height: 990px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 155px;
+        left: 50%;
+        z-index: 600;
+        bottom: -129px;
+    }
+
+    .screenshot.hero{
+    position: absolute;
+        background-image: url(screenshot.jpg);
+        width: 418px;
+        height: 744px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        margin-left: 212px;
+        bottom: 70px;
+        z-index: 500;
+    }
+
+@media screen and (max-width: 923px){
+
+
+    /* OLD */
+
+    .location-pulse-1 {
+        margin-left: 0px;
+        margin-top: -322px;
+    }
+
+    .location-pulse-2 {
+        margin-left: 80px;
+        margin-top: -100px;
+    }
+
+    .location-pulse-3 {
+        margin-left: -315px;
+        margin-top: 0px;
+    }
+
+    .block .content{
+        width: 90%;
+        text-align: center;
+        position: absolute;
+        left: 5%;
+        margin-left: initial;
+        bottom: 30px;
+        top: initial;
+    }  
+
+    .block-local{
+        height:600px;
+    }
+
+    .location-notification{
+        margin-top: -245px;
+        margin-left: -250px;
+        height: 140px;
+        width: 500px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    .location-notification{
+        width: 100%;
+        margin-top: -195px;
+        margin-left: -50%;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    img.herologo{
+        width:250px;
+    }
+
+    .content.hero{
+        margin-left: -418px;
+        width:850px;
+    }
+
+    .content.info{
+        margin-left: -425px;
+        position: relative;
+        width: 850px;
+    }
+
+    .content.contact{
+        margin-left: -425px;
+        position: relative;
+        width: 850px;
+    }
+
+    .contactblock{
+        width: 410px;
+    }
+
+    #contactblock2{
+        margin-left:20px;
+    }
+
+    .screenshotblock{
+        width:410px;
+    }
+
+    #screenshot2{
+        margin-left:25px;
+    }
+
+    #screenshot4{
+        margin-left:25px;
+    }
+
+    .phone.hero{
+        margin-left: 20px;
+    }
+
+    .screenshot.hero{
+        margin-left: 57px;
+    }
+
+    .logo{
+        margin-left: -425px;
+    }
+
+    .download{
+        margin-left: 135px;
+    }
+
+    .cover h2{
+        width:850px;
+    }
+
+    .download{
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    .header{
+        top:initial;
+        bottom:0;
+        display:none;
+    }
+
+    .headershowmobile{
+        display:initial;
+        animation-name:slideInUp;
+        animation-duration:0.3s;
+    }
+
+    .cover h1{
+        width:100%;
+    }
+
+    .cover h2{
+        width:90%;
+        font-size:35px;
+    }
+
+    img.herologo{
+        width:300px;
+    }
+
+    .content.hero{
+        width: 80%;
+        margin-left: -50%;
+        text-align: center;
+        bottom: 30px;
+        top: initial;
+        padding-left: 10%;
+    }
+
+    .content.info{
+        width:100%;
+        margin-left: -50%;
+        top:0;
+    }
+
+    .content.info h2{
+        padding-left:10%;
+        width:80%;
+        padding-bottom: 30px;
+    }
+
+    .content.contact{
+        width:100%;
+        margin-left: -50%;
+    }
+
+    .screenshotblock{
+        width: 100%;
+        margin-bottom:10px;
+        margin-left:initial;
+    }
+
+    .contactblock{
+        width: 100%;
+        height:auto;
+        margin-left: initial;
+        margin-top:initial;
+    }
+
+    .contactblock h2{
+        font-size:25px;
+        text-align:center;
+    }
+
+    #contactblock2{
+        margin-left: initial;
+        padding-bottom: 85px;
+    }
+
+    .screenshotblock{
+        width: 100%;
+        margin-bottom:10px;
+        margin-left:initial;
+    }
+
+    #screenshot1{
+        margin-left:initial;
+    }
+
+    #screenshot2{
+        margin-left:initial;
+    }
+
+    #screenshot3{
+        margin-left:initial;
+    }
+
+    #screenshot4{
+         margin-left:initial;       
+    }
+
+    .phone.hero{
+        width: 300px;
+        margin-left: -150px;
+        margin-top: -263px;
+        bottom: 117px;
+    }
+
+    .screenshot.hero{
+        left: 50%;
+        width: 250px;
+        margin-left: -123px;
+        margin-top: -16px;
+        bottom: 170px;
+    }  
+
+    .content.hero{
+        width:40%;
+    }
+
+    .phone.hero{
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 63px;
+        bottom: -65px;
+    }
+
+    .screenshot.hero{
+        margin-left:55px;
+        bottom:-12px;
+    }
+
+
+    .phone.hero{
+        display:none;
+    }
+
+    .screenshot.hero{
+        display:none;
+    }
+
+    .content.hero{
+        width:80%;
+    }
+
+    .content.info h2{
+        font-size:25px;
+    }
+
+    .phone.hero{
+        bottom:30px;
+    }
+
+    .screenshot.hero{
+        bottom:83px;
+    }
+
+    .content.hero{
+        bottom:20px;
+    }
+
+    img.herologo{
+        width:200px;
+    }
+
+    .cover h1{
+        font-size:35px;
+    }
+
+}
