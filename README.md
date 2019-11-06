@@ -1,2 +1,2 @@
 # weatherzone.app
-![weatherzonedotapp](https://github.com/chrissouthcott/wz-dotapp/blob/master/assets/github.png?raw=true)
+![weatherzonedotapp](https://github.com/chrissouthcott/weatherzone.app/blob/master/assets/github.png?raw=true)
